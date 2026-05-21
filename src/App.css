@@ -304,9 +304,9 @@ nav a.active {
 
     margin: 0;
 
-    padding: 12px 0;
+    padding: 12px;
 
-    z-index: 10;
+    z-index: 1;
 
     overflow: visible;
 
@@ -327,8 +327,6 @@ nav a.active {
     flex-direction: column;
 
     gap: 18px;
-
-    padding: 0 12px;
   }
 
   .sidebar h1 {
@@ -348,21 +346,19 @@ nav a.active {
   }
 
   .project-list {
-    width: 100vw;
+    width: 100%;
 
     margin-top: 18px;
 
-    margin-left: -12px;
-
     position: relative;
 
-    z-index: 30;
+    z-index: 1;
   }
 
   .project-row {
     position: relative;
 
-    z-index: 40;
+    z-index: 1;
 
     grid-template-columns: 42px minmax(0, 1fr) auto;
 
@@ -391,6 +387,12 @@ nav a.active {
     z-index: 1;
   }
 
+  .project-description {
+    position: relative;
+
+    z-index: 1;
+  }
+
   .project-description pre,
   .about-text pre {
     font-size: 11px;
@@ -399,13 +401,29 @@ nav a.active {
   }
 
   .sidebar-footer {
-    display: none;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    margin-top: 40px;
+
+    font-size: 12px;
+
+    line-height: 1;
+  }
+
+  .copyright {
+    font-size: 12px;
+
+    line-height: 1.05;
   }
 
   .viewer {
     position: relative;
 
-    z-index: 20;
+    z-index: 100;
 
     width: 100%;
 
@@ -415,13 +433,21 @@ nav a.active {
   .image-flow {
     position: relative;
 
-    z-index: 25;
+    z-index: 999;
 
     width: 100%;
 
     align-items: center;
 
     gap: 24px;
+
+    padding-bottom: 120vh;
+  }
+
+  .image-flow img {
+    position: relative;
+
+    z-index: 999;
   }
 
   .image-flow img.large,
