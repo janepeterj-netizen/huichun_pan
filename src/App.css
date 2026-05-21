@@ -297,35 +297,48 @@ nav a.active {
 
 .sidebar {
 
-  position: sticky;
+  position: fixed;
 
   top: 0;
 
-  width: 100%;
+  left: 0;
 
-  margin: 0;
+  right: 0;
+
+  width: 100%;
 
   padding: 12px;
 
-  z-index: 10;
-
-  overflow: visible;
+  z-index: 9999;
 
   background: transparent;
+
+  pointer-events: none;
 
 }
 
   .sidebar-inner {
-    min-height: auto;
 
-    padding: 0;
+  min-height: calc(100vh - 24px);
 
-    display: block;
-  }
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+}
 
 .sidebar-top {
 
   padding: 0 12px 0 12px;
+
+}
+.sidebar-top * {
+
+  pointer-events: auto;
 
 }
 
@@ -398,15 +411,17 @@ nav a.active {
 
 .sidebar-footer {
 
+    position: relative;
+
+  z-index: 1;
+
   display: flex;
 
   flex-direction: column;
 
   gap: 4px;
 
-  margin-top: 40px;
-
-  padding: 0 12px;
+  padding: 0;
 
   font-size: 12px;
 
@@ -422,27 +437,21 @@ nav a.active {
 
 }
 
-  .viewer {
-    position: relative;
+.viewer {
 
-    z-index: 20;
+  position: relative;
 
-    width: 100%;
+  z-index: 1;
 
-    padding: 0 12px 40px;
-  }
+}
 
-  .image-flow {
-    position: relative;
+.image-flow {
 
-    z-index: 25;
+  position: relative;
 
-    width: 100%;
+  z-index: 1;
 
-    align-items: center;
-
-    gap: 24px;
-  }
+}
 
   .image-flow img.large,
   .image-flow img.medium,
