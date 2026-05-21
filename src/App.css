@@ -431,9 +431,11 @@ nav a.active {
   overflow-y: auto;
   overflow-x: hidden;
 
+  -webkit-overflow-scrolling: touch;
+
   padding: 0 12px 120vh;
 
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .image-flow {
