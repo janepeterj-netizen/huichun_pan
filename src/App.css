@@ -296,31 +296,26 @@ nav a.active {
     min-height: 100vh;
   }
 
-.sidebar {
-
-  position: sticky;
-
-  top: 0;
-
-  width: 100%;
-
-  margin: 0;
-
-  padding: 12px;
-
-  z-index: 9999;
-
-  overflow: visible;
-
-  background: transparent;
-
-
-}
+  .sidebar {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    z-index: 1;
+    overflow: visible;
+    background: transparent;
+  }
 
   .sidebar-inner {
-    min-height: auto;
+    min-height: calc(100vh - 24px);
     padding: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar-top {
+    padding: 0;
   }
 
   .sidebar h1 {
@@ -333,21 +328,22 @@ nav a.active {
     margin-bottom: 16px;
   }
 
- .sidebar-top {
-  display: inline-flex;
-
-  flex-direction: column;
-
-  gap: 18px;
-}
-}
+  nav a {
+    font-size: 18px;
+  }
 
   .project-list {
+    width: 100%;
     margin-top: 18px;
+    position: relative;
+    z-index: 1;
   }
 
   .project-row {
-    grid-template-columns: 48px 1fr;
+    position: relative;
+    z-index: 1;
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    gap: 8px;
   }
 
   .project-row span {
@@ -355,17 +351,17 @@ nav a.active {
     line-height: 1;
   }
 
-.project-row {
-  grid-template-columns: 42px minmax(0, 1fr) auto;
-  gap: 8px;
-}
+  .project-row span:nth-child(3) {
+    display: block;
+    text-align: right;
+    white-space: nowrap;
+    font-size: 10px;
+  }
 
-.project-row span:nth-child(3) {
-  display: block;
-  text-align: right;
-  white-space: nowrap;
-  font-size: 10px;
-}
+  .project-expand {
+    position: relative;
+    z-index: 1;
+  }
 
   .project-description pre,
   .about-text pre {
@@ -374,19 +370,38 @@ nav a.active {
   }
 
   .sidebar-footer {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1;
   }
 
-.viewer {
-  width: 100%;
+  .copyright {
+    font-size: 12px;
+    line-height: 1.05;
+  }
 
-  padding: 0 12px 40px;
-}
+  .viewer {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    padding: 0 12px 40px;
+  }
 
   .image-flow {
+    position: relative;
+    z-index: 100;
     width: 100%;
     align-items: center;
     gap: 24px;
+  }
+
+  .image-flow img,
+  .about-image img {
+    position: relative;
+    z-index: 100;
   }
 
   .image-flow img.large,
@@ -395,3 +410,4 @@ nav a.active {
   .about-image img {
     width: 100%;
   }
+}
