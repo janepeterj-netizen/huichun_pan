@@ -321,13 +321,11 @@ nav a.active {
     display: block;
   }
 
-  .sidebar-top {
-    display: inline-flex;
+.sidebar-top {
 
-    flex-direction: column;
+  padding: 0 12px 0 12px;
 
-    gap: 18px;
-  }
+}
 
   .sidebar h1 {
     font-size: 18px;
@@ -345,15 +343,17 @@ nav a.active {
     font-size: 18px;
   }
 
-  .project-list {
-    width: 100%;
+.project-list {
 
-    margin-top: 18px;
+  width: 100%;
 
-    position: relative;
+  margin-top: 18px;
 
-    z-index: 1;
-  }
+  position: relative;
+
+  z-index: 30;
+
+}
 
   .project-row {
     position: relative;
