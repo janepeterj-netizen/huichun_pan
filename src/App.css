@@ -396,9 +396,21 @@ nav a.active {
     max-width: none;
   }
 
-  .sidebar-footer {
-    display: none;
-  }
+.sidebar-footer {
+
+  display: flex;
+
+  margin-top: 40px;
+
+  font-size: 12px;
+
+}
+
+.copyright {
+
+  font-size: 12px;
+
+}
 
   .viewer {
     position: relative;
