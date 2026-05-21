@@ -360,152 +360,101 @@ nav a.active {
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
-  .sidebar.collapsed nav,
-  .sidebar.collapsed .project-list,
-  .sidebar.collapsed .about-text,
-  .sidebar.collapsed .sidebar-footer {
-    display: none;
-  }
+.sidebar {
+  position: fixed;
 
-  .sidebar.collapsed h1 {
-    display: none;
-  }
+  top: 0;
+  left: 0;
+  right: 0;
 
-  .sidebar.collapsed::after {
-    content: attr(data-active);
-  }
+  width: 100vw;
 
+  padding: 12px;
 
-  * {
+  z-index: 9999;
 
-    cursor: auto;
+  background: white;
+}
 
-  }
+.sidebar-inner {
+  padding: 0;
 
-  .cursor {
+  display: flex;
+  flex-direction: column;
 
-    display: none;
+  gap: 24px;
+}
 
-  }
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
 
-  .site {
+  gap: 18px;
+}
 
-    width: 100vw;
-
-    min-height: 100vh;
-
-  }
-
-  .sidebar {
-
-    position: fixed;
-
-    top: 12px;
-
-    left: 12px;
-
-    right: 12px;
-
-    width: auto;
-
-    height: auto;
-
-    z-index: 9999;
-
-    background: transparent;
-
-  }
-
-  .sidebar-inner {
-
-    height: auto;
-
-    padding: 0;
-
-    display: block;
-
-  }
-
-  .sidebar-footer {
-
-    display: none;
-
-  }
-
-  .viewer {
-
-    width: 100vw;
-
-    padding: 160px 12px 80px;
-
-  }
-
-  .image-flow {
-
-    width: 100%;
-
-    align-items: center;
-
-    gap: 24px;
-
-  }
-
-  .image-flow img.large,
-
-  .image-flow img.medium,
-
-  .image-flow img.small {
-
-    width: 100%;
-
-  }
-
-  .project-list {
-
-    margin-top: 32px;
-
-  }
-
-  .project-row span {
-
-    font-size: 11px;
-
-  }
-
-  .project-row {
-
-    grid-template-columns: 48px 1fr;
-
-  }
-
-  .project-row span:nth-child(3) {
-
-    display: none;
-
-  }
-.mobile-current {
+.sidebar-footer {
   display: none;
 }
 
-@media (max-width: 900px) {
-  .mobile-current {
-    display: none;
-  }
-
-  .sidebar.collapsed .mobile-current {
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1;
-  }
-
-  .sidebar.collapsed h1,
-  .sidebar.collapsed nav,
-  .sidebar.collapsed .project-list,
-  .sidebar.collapsed .about-text,
-  .sidebar.collapsed .sidebar-footer {
-    display: none;
-  }
+.viewer {
+  padding-top: 240px;
 }
+
+.project-list {
+  margin-top: 0;
+
+  max-height: none;
+
+  overflow: visible;
+
+  border-top: 1px solid rgba(0,0,0,0.7);
+}
+
+.project-row {
+  grid-template-columns: 52px 1fr;
+
+  row-gap: 2px;
+}
+
+.project-row span {
+  font-size: 11px;
+
+  line-height: 1;
+}
+
+.project-row span:nth-child(3) {
+  display: none;
+}
+
+.sidebar h1 {
+  font-size: 18px;
+
+  margin: 0;
+}
+
+nav {
+  margin-bottom: 0;
+
+  gap: 12px;
+}
+
+nav a {
+  font-size: 18px;
+}
+
+.about-text pre,
+.project-description pre {
+  font-size: 11px;
+
+  max-width: none;
+}
+
+.image-flow {
+  gap: 24px;
+}
+
+.image-flow img.large,
+.image-flow img.medium,
+.image-flow img.small {
+  width: 100%;
 }

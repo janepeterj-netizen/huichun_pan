@@ -1,18 +1,6 @@
 import { useEffect, useState } from "react"
 import "./App.css"
 
-useEffect(() => {
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 40)
-  }
-
-  window.addEventListener("scroll", handleScroll)
-
-  return () => {
-    window.removeEventListener("scroll", handleScroll)
-  }
-}, [])
-
 const projects = [
 
   {
@@ -198,7 +186,7 @@ Tiger Roar Awards — Gold, 2017
 export default function App() {
   const [section, setSection] = useState("works")
   const [activeProject, setActiveProject] = useState(null)
-  const [isScrolled, setIsScrolled] = useState(false)
+
   useEffect(() => {
     const cursor = document.querySelector(".cursor")
 
@@ -220,13 +208,8 @@ export default function App() {
       <div className="cursor"></div>
 
       <main className="site">
-        <aside className={`sidebar ${isScrolled ? "collapsed" : ""}`}>
+        <aside className="sidebar">
          <div className="sidebar-inner">
-          <div className="mobile-current">
-
-  {activeProject ? `${activeProject.year} / ${activeProject.title}` : "Works"}
-
-</div>
              <div className="sidebar-top"> 
                
               <h1>Huichun Pan</h1>
