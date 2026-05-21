@@ -297,6 +297,7 @@ nav a.active {
   }
 
 .sidebar {
+
   position: sticky;
 
   top: 0;
@@ -313,7 +314,7 @@ nav a.active {
 
   background: transparent;
 
-  mix-blend-mode: difference;
+
 }
 
   .sidebar-inner {
@@ -332,13 +333,13 @@ nav a.active {
     margin-bottom: 16px;
   }
 
-  nav a {
-    font-size: 18px;
-   .sidebar h1,
-   .project-row,
-   .project-row span {
-    color: white;
+ .sidebar-top {
+  display: inline-flex;
 
+  flex-direction: column;
+
+  gap: 18px;
+}
 }
 
   .project-list {
@@ -386,4 +387,3 @@ nav a.active {
   .about-image img {
     width: 100%;
   }
-}
