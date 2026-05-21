@@ -275,10 +275,13 @@ nav a.active {
 .sidebar-footer {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+
+  gap: 4px;
+
   font-size: 18px;
   font-weight: 600;
-  line-height: 0.95;
+
+  line-height: 1;
 }
 
 .sidebar-footer a {
@@ -286,11 +289,27 @@ nav a.active {
   text-decoration: none;
 }
 
+.footer-text {
+
+  display: inline-block;
+
+}
+
 .copyright {
   margin-top: 42px;
   font-size: 16px;
   line-height: 1.05;
   max-width: 320px;
+}
+
+.sidebar-footer a:hover {
+
+  text-decoration-line: line-through;
+
+  text-decoration-thickness: 2px;
+
+  text-decoration-skip-ink: none;
+
 }
 
 /* IMAGE LAYER */
@@ -346,6 +365,32 @@ nav a.active {
   * {
     cursor: auto;
   }
+
+.sidebar h1 {
+  font-size: 18px;
+}
+
+nav a {
+  font-size: 18px;
+}
+
+.project-row span {
+  font-size: 11px;
+}
+
+.sidebar-footer {
+  font-size: 11px;
+}
+
+.copyright {
+  font-size: 11px;
+}
+
+.about-text pre,
+.project-description pre {
+  font-size: 11px;
+}
+
 
   .cursor {
     display: none;

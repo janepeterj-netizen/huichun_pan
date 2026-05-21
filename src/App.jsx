@@ -6,15 +6,47 @@ const projects = [
   {
     year: "2026",
     title: "LOOKING TOO LONG",
-    type: "Photography / Print",
+    type: "Graphy / Print",
 
-    description: {
-      en: `This work originates from a long-term observation of window imagery. Through frosted or textured glass, interior scenes appear blurred and difficult to confirm, existing between reality and unreality.`,
+   description: {
 
-      zh: `這件作品源於對窗戶影像的長期觀察。透過霧面或帶有肌理的玻璃，室內景象變得模糊且難以確認，存在於真實與非真實之間。`,
+  en: `
 
-      ja: `本作は、窓のイメージに対する長期的な観察から始まった。曇りガラスやテクスチャのあるガラス越しに、室内の光景は曖昧になり、現実と非現実のあいだに留まる。`,
-    },
+An image-based work developed through the long-term observation of windows and interior scenes.
+
+Through textured glass, reflections, shadows, and distance, the spaces behind the window remain visible yet difficult to fully approach.
+
+The closer the distance becomes, the less clearly the image can be seen.
+
+Printed on semi-transparent paper.
+
+  `,
+
+  zh: `
+
+一件透過長期觀察窗戶與室內景象所發展出的影像作品。
+
+透過帶有肌理的玻璃、反射、陰影與距離，窗後的空間始終可見，卻難以真正靠近。
+
+越接近，彷彿越看不清。
+
+作品印製於半透明紙材上。
+
+  `,
+
+  ja: `
+
+窓と室内風景への長期的な観察から展開されたイメージ作品。
+
+テクスチャのあるガラス、反射、影、距離を通して、窓の向こうの空間は見えていながら、完全には近づくことができない。
+
+近づくほど、かえって見えなくなっていく。
+
+作品は半透明の紙に印刷されている。
+
+  `,
+
+},
 
     images: [
       { src: "/images/look-1.jpg", size: "large" },
