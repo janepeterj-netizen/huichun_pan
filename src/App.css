@@ -400,15 +400,25 @@ nav a.active {
 
   display: flex;
 
+  flex-direction: column;
+
+  gap: 4px;
+
   margin-top: 40px;
 
+  padding: 0 12px;
+
   font-size: 12px;
+
+  line-height: 1;
 
 }
 
 .copyright {
 
   font-size: 12px;
+
+  line-height: 1.05;
 
 }
 
