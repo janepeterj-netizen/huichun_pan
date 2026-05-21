@@ -291,13 +291,17 @@ nav a.active {
     overflow-y: auto;
   }
 
-  .site {
-    width: 100%;
-    min-height: 100vh;
-  }
+.site {
+
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+}
 
   .sidebar {
-    position: sticky;
+    position: relative;
+    z-index: 1;
     top: 0;
 
     width: 100%;
@@ -420,15 +424,23 @@ nav a.active {
     line-height: 1.05;
   }
 
-  .viewer {
-    position: relative;
+.viewer {
 
-    z-index: 100;
+  position: absolute;
 
-    width: 100%;
+  top: 0;
 
-    padding: 0 12px 40px;
-  }
+  left: 0;
+
+  width: 100%;
+
+  z-index: 999;
+
+  padding: 0 12px 120vh;
+
+  pointer-events: none;
+
+}
 
   .image-flow {
     position: relative;
