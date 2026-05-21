@@ -295,22 +295,25 @@ nav a.active {
     min-height: 100vh;
   }
 
-  .sidebar {
-    position: sticky;
-    top: 0;
+.sidebar {
 
-    width: 100%;
+  position: sticky;
 
-    margin: 0;
+  top: 0;
 
-    padding: 12px 0;
+  width: 100%;
 
-    z-index: 10;
+  margin: 0;
 
-    overflow: visible;
+  padding: 12px;
 
-    background: transparent;
-  }
+  z-index: 10;
+
+  overflow: visible;
+
+  background: transparent;
+
+}
 
   .sidebar-inner {
     min-height: auto;
@@ -320,15 +323,11 @@ nav a.active {
     display: block;
   }
 
-  .sidebar-top {
-    display: inline-flex;
+.sidebar-top {
 
-    flex-direction: column;
+  padding: 0 12px 0 12px;
 
-    gap: 18px;
-
-    padding: 0 12px;
-  }
+}
 
   .sidebar h1 {
     font-size: 18px;
@@ -346,17 +345,17 @@ nav a.active {
     font-size: 18px;
   }
 
-  .project-list {
-    width: 100vw;
+.project-list {
 
-    margin-top: 18px;
+  width: 100%;
 
-    margin-left: 12px;
+  margin-top: 18px;
 
-    position: relative;
+  position: relative;
 
-    z-index: 30;
-  }
+  z-index: 30;
+
+}
 
   .project-row {
     position: relative;
