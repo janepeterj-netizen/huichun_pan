@@ -296,17 +296,25 @@ nav a.active {
     min-height: 100vh;
   }
 
-  .sidebar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 12px;
-    background: white;
-    z-index: 9999;
-    overflow: visible;
-  }
+.sidebar {
+  position: sticky;
+
+  top: 0;
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 12px;
+
+  z-index: 9999;
+
+  overflow: visible;
+
+  background: transparent;
+
+  mix-blend-mode: difference;
+}
 
   .sidebar-inner {
     min-height: auto;
@@ -324,9 +332,12 @@ nav a.active {
     margin-bottom: 16px;
   }
 
-  nav a {
-    font-size: 18px;
-  }
+nav a,
+.sidebar h1,
+.project-row,
+.project-row span {
+  color: white;
+}
 
   .project-list {
     margin-top: 18px;
@@ -355,11 +366,11 @@ nav a.active {
     display: none;
   }
 
-  .viewer {
-    width: 100%;
-    min-height: auto;
-    padding: 24px 12px 80px;
-  }
+.viewer {
+  width: 100%;
+
+  padding: 0 12px 40px;
+}
 
   .image-flow {
     width: 100%;
