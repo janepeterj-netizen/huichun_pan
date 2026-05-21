@@ -343,8 +343,26 @@ nav a.active {
 }
 
   .project-list {
-    margin-top: 18px;
-  }
+    position: relative;
+    z-index: 10;
+
+}
+
+.project-expand {
+
+  position: relative;
+
+  z-index: 1;
+
+}
+
+.image-flow {
+
+  position: relative;
+
+  z-index: 999;
+
+}
 
   .project-row {
     grid-template-columns: 48px 1fr;
