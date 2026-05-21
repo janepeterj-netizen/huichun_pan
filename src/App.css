@@ -355,9 +355,17 @@ nav a.active {
     line-height: 1;
   }
 
-  .project-row span:nth-child(3) {
-    display: none;
-  }
+.project-row {
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.project-row span:nth-child(3) {
+  display: block;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 10px;
+}
 
   .project-description pre,
   .about-text pre {
