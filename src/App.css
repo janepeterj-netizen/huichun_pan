@@ -332,11 +332,13 @@ nav a.active {
     margin-bottom: 16px;
   }
 
-nav a,
-.sidebar h1,
-.project-row,
-.project-row span {
-  color: white;
+  nav a {
+    font-size: 18px;
+   .sidebar h1,
+   .project-row,
+   .project-row span {
+    color: white;
+
 }
 
   .project-list {
