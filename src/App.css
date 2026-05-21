@@ -276,3 +276,191 @@ nav a.active {
   display: block;
 }
 
+/* MOBILE */
+@media (max-width: 900px) {
+  * {
+    cursor: auto;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .site {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    margin: 0;
+
+    padding: 12px;
+
+    z-index: 1;
+
+    overflow: visible;
+
+    background: transparent;
+  }
+
+  .sidebar-inner {
+    min-height: auto;
+
+    padding: 0;
+
+    display: block;
+  }
+
+  .sidebar-top {
+    display: inline-flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .sidebar h1 {
+    font-size: 18px;
+
+    margin: 0 0 10px;
+  }
+
+  nav {
+    gap: 12px;
+
+    margin-bottom: 16px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .project-list {
+    width: 100%;
+
+    margin-top: 18px;
+
+    position: relative;
+
+    z-index: 1;
+  }
+
+  .project-row {
+    position: relative;
+
+    z-index: 1;
+
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+
+    gap: 8px;
+  }
+
+  .project-row span {
+    font-size: 11px;
+
+    line-height: 1;
+  }
+
+  .project-row span:nth-child(3) {
+    display: block;
+
+    text-align: right;
+
+    white-space: nowrap;
+
+    font-size: 10px;
+  }
+
+  .project-expand {
+    position: relative;
+
+    z-index: 1;
+  }
+
+  .project-description {
+    position: relative;
+
+    z-index: 1;
+  }
+
+  .project-description pre,
+  .about-text pre {
+    font-size: 11px;
+
+    max-width: none;
+  }
+
+  .sidebar-footer {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    margin-top: 40px;
+
+    font-size: 12px;
+
+    line-height: 1;
+  }
+
+  .copyright {
+    font-size: 12px;
+
+    line-height: 1.05;
+  }
+
+  ..viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: 0 12px 120vh;
+
+  pointer-events: none;
+}
+
+.image-flow {
+  position: relative;
+  z-index: 99999;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 24px;
+  padding-bottom: 120vh;
+}
+
+.image-flow img {
+  position: relative;
+  z-index: 99999;
+
+  width: 100%;
+}
+
+  .image-flow img.large,
+  .image-flow img.medium,
+  .image-flow img.small,
+  .about-image img {
+    width: 100%;
+  }
+}
