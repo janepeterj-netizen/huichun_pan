@@ -303,21 +303,14 @@ nav a.active {
     min-height: 100vh;
   }
 
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    height: auto;
-    max-height: 48vh;
-    z-index: 9999;
-    background: white;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 12px;
-    scrollbar-width: none;
-  }
+.sidebar {
+  position: relative;
+  width: calc(100vw - 24px);
+  max-height: none;
+  height: auto;
+  padding: 12px;
+  margin: 12px;
+}
 
   .sidebar::-webkit-scrollbar {
     display: none;
@@ -403,12 +396,11 @@ nav a.active {
     display: none;
   }
 
-  .viewer {
-    width: 100vw;
-    min-height: 100vh;
-    padding: 52vh 12px 80px;
-    pointer-events: none;
-  }
+.viewer {
+  width: 100vw;
+  min-height: auto;
+  padding: 24px 12px 80px;
+}
 
   .image-flow {
     width: 100%;
