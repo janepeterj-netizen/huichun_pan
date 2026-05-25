@@ -147,6 +147,11 @@ BRUT は、モーションビジュアル制作における複雑なプログラ
       { src: "/images/BRUT-2.jpg", size: "large" },
       { src: "/images/BRUT-3.jpg", size: "large" },
       { src: "/images/BRUT-4.gif", size: "medium" },
+      { src: "/images/BRUT-5.jpg", size: "large" },
+      { src: "/images/BRUT-6.jpg", size: "large" },
+      { src: "/images/BRUT-7.jpg", size: "large" },
+      { src: "/images/BRUT-8.png", size: "large" },
+      { src: "/images/BRUT-9.png", size: "large" },
     ],
   },
 
